@@ -1,0 +1,207 @@
+/* 오늘의 쇼핑 제안 */
+header{
+  width: 1022px;
+  margin: 100px auto 48px;
+}
+
+header a{
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 176px;
+  height: 40px;
+}
+.logo picture{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.logo picture img{
+  width: 100%;
+  height: 100%;
+}
+
+.Offer{
+  margin: 0 auto;
+  width: 1022px;
+  position: relative;
+}
+
+.OfferHeadline{
+  background-image: url("../../assets/icon/shopping.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: contain;
+  padding-left: 30px;
+
+  width: 234px;
+  height: 28px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+
+  margin-top: 1px;
+  margin-bottom: 24px;
+
+}
+
+.ProductList ul{
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.ProductList ul li{
+  display: inline-block;
+}
+
+.ProductList{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.ProductCard{
+  width: 200px;
+  height: 270px;
+
+  position: relative;
+}
+
+.ProductCard a{
+  width: 100%;
+  height: 100%;
+}
+
+.ProductCard a img{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 20px;
+  top: 14px;
+
+  margin-bottom: 12px;
+}
+
+.ProductInfo{
+  position: absolute;
+  width: 172px;
+  height: 66px;
+  left: 14px;
+  top: 186px;
+}
+
+.BadgeDiscount{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3px 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  font-style: normal;
+  color: var(--color-white);
+
+  background: var(--color-red-500);
+}
+
+.ProductName{
+  width: 172px;
+  height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 120%;
+
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.delivery-star{
+  position: absolute;
+  left: 0;
+  top: 29px;
+  width: 117px;
+  height: 37px;
+}
+.RatingStars{
+  
+  display: inline-block;
+
+  position: absolute;
+  top: 16px;
+  margin-top: 4px;
+
+  width: 117px;
+  height: 16px;
+  
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+
+  color: var(--color-gray-700);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 72px;
+
+  background-image: url("../../assets/sprites/rating-stars.png");
+  background-repeat: no-repeat;
+}
+
+.star-80{
+  background-position: 0 -110px;
+}
+.star-90{
+  background-position: 0 -124px;
+}
+.star-100{
+  background-position: 0 -138px;
+}
+.no-delivery-category{
+  position: absolute;
+  top: 0;
+}
+
+.delivery-category{
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-gray-700);
+  margin: 0 0 4px 0;
+}
+
+.delivery-category .rocket{
+  width: 55px;
+  height: 16px;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-bottom: 4px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
+  <link rel="icon" href="/assets/favicon/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+<body>
+  <header>
+    <a href="https://www.coupang.com/">
+      <h1 class="logo">
+        <picture>
+          <source type="image/webp" srcset="./assets/logo/logo.webp">
+          <img src="./assets/logo/logo.png" alt="쿠팡">
+        </picture>
+      </h1>
+    </a>
+  </header>
+  <section class="Offer">
+    <h2 class="OfferHeadline">
+      오늘의 쇼핑 제안
+    </h2>
+    <div class="ProductList">
+      <div class="hiddenDescription" id="discount-rate" style="display: none;">할인율</div>
+      <div class="hiddenDescription" id="delivery-type" style="display: none;">배송 유형</div>
+      <div class="hiddenDescription" id="buyer" style="display: none;">구매자 리뷰 수</div>
+      <ul>
+        <li class="ProductCard">
+          <a href="/">
+            <img src="./assets/offer/furniture.jpg" alt="렌지대">
+            <div aria-labelledby="discount-rate"></div>
+            <span class="BadgeDiscount">30%</span>
+            <div class="ProductInfo">
+              <p class="ProductName">솔로리빙 셀린 렌지대 60...</p>
+              <div class="delivery-star">
+                <div role="tooltip" aria-label="평점 4.5점 구매자 리뷰 수"></div>
+                <p class="no-delivery-category RatingStars star-90">(3,255)</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="ProductCard">
+          <a href="/">
+            <img src="./assets/offer/renton.jpg" alt="렌턴">
+            <div class="ProductInfo">
+              <p class="ProductName">옆 동네몰 레트로 LED 감성...</p>
+              <div class="delivery-star">
+                <div aria-labelledby="delivery-type"></div>
+                <p class="delivery-category">
+                  <img src="./assets/icon/badge-rocket.svg" alt="로켓 배송" class="rocket">
+                </p>
+                <div role="tooltip" aria-label="평점 4.5점 구매자 리뷰 수"></div>
+                <p class="RatingStars star-90">(1,807)</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="ProductCard">
+          <a href="/">
+            <img src="./assets/offer/drying-rack.jpg" alt="식기건조대">
+            <div class="ProductInfo">
+              <p class="ProductName">프리미엄 부착식 식기건조...</p>
+              <div class="delivery-star">
+                <div aria-labelledby="delivery-type"></div>
+                <p class="delivery-category">무료배송</p>
+                <div role="tooltip" aria-label="평점 4점 구매자 리뷰 수"></div>
+                <p class="RatingStars star-80">(2,423)</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="ProductCard">
+          <a href="/">
+            <img src="./assets/offer/boohgle.jpg" alt="냄비">
+            <div aria-labelledby="discount-rate"></div>
+            <span class="BadgeDiscount">10%</span>
+            <div class="ProductInfo">
+              <p class="ProductName">타지 않는 냄비 보오글 네모...</p>
+              <div class="delivery-star">
+                <div aria-labelledby="delivery-type"></div>
+                <p class="delivery-category">
+                  <img src="./assets/icon/badge-rocket.svg" alt="로켓 배송" class="rocket">
+                </p>
+                <div role="tooltip" aria-label="평점 5점 구매자 리뷰 수"></div>
+                <p class="RatingStars star-100">(1,009)</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="ProductCard">
+          <a href="/">
+            <img src="./assets/offer/deskset.jpg" alt="책상">
+            <div aria-labelledby="discount-rate"></div>
+            <span class="BadgeDiscount">25%</span>
+            <div class="ProductInfo">
+              <p class="ProductName">베스트리빙 베이직 멀티 H...</p>
+              <div class="delivery-star">
+                <div aria-labelledby="delivery-type"></div>
+                <p class="delivery-category">무료배송</p>
+                <div role="tooltip" aria-label="평점 4점 구매자 리뷰 수"></div>
+                <p class="RatingStars star-80">(3,203)</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* CSS 작성 */
+header{
+  align-self: center;
+  width: 1020px;
+  margin: 100px auto 48px;
+}
+
+section{
+  position: relative;
+  width: 1020px;
+  height: 1010px;
+  margin: 0 auto;
+}
+
+.DiscoveryHeadline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 0px 10px;
+
+  position: absolute;
+  width: 366px;
+  height: 28px;
+  left: 0px;
+  top: 8px;
+}
+.DiscoveryHeadline .title{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 115%;
+  text-align: center;
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.DiscoveryHeadline .divider{
+  color: var(--color-gray-600);
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.DiscoveryHeadline .sub-title{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 115%;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--color-gray-600);
+
+  flex :none;
+  order: 2;
+  flex-grow : 0;
+}
+
+.mt-16{
+	margin-top: 16px;
+}
+.mr-16{
+	margin-right: 16px;
+}
+
+.DiscoveryList{
+  position: absolute;
+  left: 0px;
+  top: 60px;
+}
+.DiscoveryList .CardLinkColumn2 {
+  position: relative;
+  width: 502px;
+  height: 310px;
+
+  /* background: #FFFFFF; */
+  background: var(--color-white);
+
+  border: 1px solid var(--color-gray-500);
+  float: left;
+}
+.DiscoveryList .CardLinkColumn1 {
+  position: relative;
+  width: 243px;
+  height: 310px;
+
+  /* background: #FFFFFF; */
+  background: var(--color-white);
+
+  border: 1px solid var(--color-gray-500);
+
+  float: left;
+}
+.DiscoveryList .CardLinkColumn2 .product {
+  position: absolute;
+  width: 446px;
+  height: 270px;
+  left: 28px;
+  top: 20px;
+}
+
+.DiscoveryList .CardLinkColumn1 .product {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+}
+.angle-right{
+  position: absolute;
+  left: 20px;
+  top: 248px;
+
+  width: 42px;
+  height: 42px;
+
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: var(--color-opacity-20);
+}
+
+.CardLinkColumn2::before, .CardLinkColumn1::before{
+  box-sizing: border-box;
+  content: "구매하기";
+  background-color: var(--color-blue-600);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  /* color: #FFFFFF; */
+  color: var(--color-white);
+
+  position: absolute;
+  width: 112px;
+  height: 42px;
+  padding: 11px 0 13px 20px;
+  left: 20px;
+  top: calc(50% - 42px/2 + 115px);
+  z-index: 1;
+
+  transition: opacity 100ms ease;
+  opacity: 0;
+}
+.CardLinkColumn2::after, .CardLinkColumn1::after{
+  box-sizing: border-box;
+  content: url("../../assets/icon/angle-right-square.svg");
+  background-color: var(--color-blue-600);
+
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 90px;
+  top: calc(50% - 42px/2 + 115px);
+  z-index: 1;
+
+  transition: opacity 100ms ease;
+  opacity: 0;
+}
+.CardLinkColumn2:hover, .CardLinkColumn1:hover{
+  border: 1px solid var(--color-blue-600);
+}
+.CardLinkColumn2:focus, .CardLinkColumn1:focus{
+  border: 1px solid var(--color-blue-600);
+  outline: none;
+}
+.CardLinkColumn2:focus::before, .CardLinkColumn2:hover::before, 
+.CardLinkColumn2:focus::after, .CardLinkColumn2:hover::after, 
+.CardLinkColumn1:focus::before, .CardLinkColumn1:hover::before, 
+.CardLinkColumn1:focus::after, .CardLinkColumn1:hover::after{
+  opacity: 1;
+}
