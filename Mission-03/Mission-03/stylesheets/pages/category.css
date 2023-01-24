@@ -1,0 +1,168 @@
+/* 카테고리별 추천 광고상품 */
+header{
+  width: 1020px;
+  margin: 100px auto 48px;
+}
+header a{
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 176px;
+  height: 40px;
+}
+.CategoryBest{
+  margin: 0 auto;
+  width: 1020px;
+  position: relative;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.CategoryBestHeadline{
+  width: 260px;
+  height: 46px;
+  
+  margin-top: 0;
+  margin-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.hot-trend{
+  width: 100px;
+  height: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+
+  margin: 0;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.title{
+  width: 260px;
+  height: 28px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+}
+.title .blue{
+  color: var(--color-blue-600);
+}
+.CategoryBestProduct{
+  width: 1022px;
+  height: 634px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  display: flex;
+  flex-direction: row;
+}
+.title-hashtag{
+  width: 174px;
+  height: 631px;
+  position: relative;
+}
+.CategoryTitle{
+  width: 89px;
+  height: 28px;
+  position: absolute;
+  left: 24px;
+  top: 48px;
+  
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+
+  margin: 0;
+}
+.HouseWare{
+  border-color: var(--color-brown-300);
+}
+.KitchenWare{
+  border-color: var(--color-green-700);
+}
+.goLink{
+  width: 62px;
+  height: 17px;
+  
+  position: absolute;
+  left: 24px;
+  top: 84px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-gray-700);
+
+  background-image: url("../../assets/icon/angle-right-default.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.keyword{
+  width: 93px;
+  height: 21px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115%;
+
+  position: absolute;
+  left: 24px;
+  top: 349px;
+}
+.HashTagGroup{
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  margin: 0;
+
+  width: 117px;
+  height: 216px;
+  
+  position: absolute;
+  left: 24px;
+  top: 390px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hashtag{
+  display: inline-block;
+  
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+
+  width: max-content;
+  height: 26px;
+  border: 1px solid var(--color-gray-400);
+  padding: 6px 10px;
+}
+.HouseWare .CategoryTitle, .HouseWare .keyword, .HouseWare .HashTagGroup{
+  color: var(--color-brown-300);
+}
+.KitchenWare .CategoryTitle, .KitchenWare .keyword, .KitchenWare .HashTagGroup{
+  color: var(--color-green-700);
+}
+.SlideBanner{
+  width: 320px;
+  height: 631px;
+  border: 1px solid red;
+}
