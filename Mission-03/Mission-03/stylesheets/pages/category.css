@@ -158,21 +158,122 @@ header a{
 .SlideBanner{
   width: 320px;
   height: 631px;
-  border: 1px solid red;
+  
+  position: relative;
 }
-.SlideBanner input:checked::after{
+.SlideImageGroup{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.SlideImage{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.SlideBannerText{
+  width: 260px;
+  height: 90px;
+
+  position: absolute;
+  left: 30px;
+  top: 483px;
+
+  padding: 0;
+}
+.HouseWare .SlideBanner .SlideBannerText{
+  background-color: var(--color-brown-300);
+}
+.KitchenWare .SlideBanner .SlideBannerText{
+  background-color: var(--color-green-700);
+}
+.SlideBannerText p{
+  width: 205px;
+  height: 24px;
+  
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+
+  color: var(--color-white);
+  
+  margin-top: 19px;
+  margin-left: 28px;
+
+}
+.SlideBannerText p span{
+  display: inline-block;
+
+  width: 215px;
+  height: 19px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+
+  margin-top: 8px;
+  margin-left: -5px;
+
+}
+.SlideBanner .IndicateGroup{
+  width: 32px;
+  height: 12px;
+  
+  position: absolute;
+  left: 144px;
+  top: 597px;
+}
+.SlideBanner .IndicateGroup input{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+}
+.SlideBanner .IndicateGroup .input2{
+  position: absolute;
+  left: 20px;
+}
+.SlideBanner .IndicateGroup input:checked::after{
   background-color: var(--color-gray-700);
 }
-.SlideBanner input::after{
+.SlideBanner .IndicateGroup input::after{
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   background-color: var(--color-gray-600);
   border-radius: 50%;
   position: relative;
-  top: -3.3px;
-  left: 0px;
+  top: -4.2px;
+  left: -0px;
   display: inline-block;
   visibility: visible;
-  
+}
+.ProductGroup{
+  width: 528px;
+  height: 634px;
+  display: flex;
+  flex-direction: column;
+}
+.ProductGroup-Top, .ProductGroup-Bottom{
+  width: 528px;
+  height: 316px;
+
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 9px;
+}
+.ProductCard{
+  width: 160px;
+  height: 300px;
+  border: 1px solid green;
+  margin-left: 16px;
 }
