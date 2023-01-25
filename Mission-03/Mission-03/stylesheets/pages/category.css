@@ -160,3 +160,19 @@ header a{
   height: 631px;
   border: 1px solid red;
 }
+.SlideBanner input:checked::after{
+  background-color: var(--color-gray-700);
+}
+.SlideBanner input::after{
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: var(--color-gray-600);
+  border-radius: 50%;
+  position: relative;
+  top: -3.3px;
+  left: 0px;
+  display: inline-block;
+  visibility: visible;
+  
+}
