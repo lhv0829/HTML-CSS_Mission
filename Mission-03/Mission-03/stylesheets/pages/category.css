@@ -181,6 +181,8 @@ header a{
   width: 100%;
   height: 100%;
   margin: 0;
+
+  position: relative;
 }
 .SlideBannerText{
   width: 260px;
@@ -198,7 +200,7 @@ header a{
 .KitchenWare .SlideBanner .SlideBannerText{
   background-color: var(--color-green-700);
 }
-.SlideBannerText p{
+.SlideBannerText .LargeText{
   width: 205px;
   height: 24px;
   
@@ -209,11 +211,11 @@ header a{
 
   color: var(--color-white);
   
-  margin-top: 19px;
-  margin-left: 28px;
+  margin: 19px 0 0 28px;
+  /* margin-left: 28px; */
 
 }
-.SlideBannerText p span{
+.SlideBannerText .SmallText{
   display: inline-block;
 
   width: 215px;
@@ -223,9 +225,10 @@ header a{
   font-size: 14px;
   line-height: 120%;
   text-align: center;
+  
+  color: var(--color-white);
 
-  margin-top: 8px;
-  margin-left: -5px;
+  margin: 8px 0 0 23px;
 
 }
 .SlideBanner .IndicateGroup{
@@ -243,7 +246,7 @@ header a{
 
   position: absolute;
 }
-.SlideBanner .IndicateGroup .input2{
+.SlideBanner .IndicateGroup .indicator2{
   position: absolute;
   left: 20px;
 }
@@ -262,6 +265,7 @@ header a{
   display: inline-block;
   visibility: visible;
 }
+.indicator1:checked ~ .SlideImageGroup .SlideImage
 .ProductGroup{
   width: 528px;
   height: 634px;
