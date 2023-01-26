@@ -241,21 +241,25 @@ header a{
   
   z-index: 1;
 }
-.SlideBanner .IndicateGroup input{
+.SlideBanner input{
   display: inline-block;
   width: 12px;
   height: 12px;
 
   position: absolute;
+  left: 144px;
+  top: 597px;
+  z-index: 1;
 }
-.SlideBanner .IndicateGroup .indicator2{
+.SlideBanner .indicator2{
   position: absolute;
-  left: 20px;
+  left: 164px;
+  top: 597px;
 }
-.SlideBanner .IndicateGroup input:checked::after{
+.SlideBanner input:checked::after{
   background-color: var(--color-gray-700);
 }
-.SlideBanner .IndicateGroup input::after{
+.SlideBanner input::after{
   content: "";
   width: 12px;
   height: 12px;
@@ -267,8 +271,13 @@ header a{
   display: inline-block;
   visibility: visible;
 }
-.indicator1:checked ~ .SlideImageGroup .SlideImage{
-
+.indicator1:checked ~ .SlideImageGroup > .SlideImage{
+  transform: translateX(0%);
+  transition: all 0.3s linear;
+}
+.indicator2:checked ~ .SlideImageGroup > .SlideImage{
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
 }
 .ProductGroup{
   width: 528px;

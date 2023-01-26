@@ -131,6 +131,10 @@ header a{
 
   margin-top: 0;
   margin-bottom: 12px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .delivery-star{
   position: absolute;
