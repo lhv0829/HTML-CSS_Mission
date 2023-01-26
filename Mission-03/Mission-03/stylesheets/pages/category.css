@@ -238,6 +238,8 @@ header a{
   position: absolute;
   left: 144px;
   top: 597px;
+  
+  z-index: 1;
 }
 .SlideBanner .IndicateGroup input{
   display: inline-block;
@@ -265,7 +267,9 @@ header a{
   display: inline-block;
   visibility: visible;
 }
-.indicator1:checked ~ .SlideImageGroup .SlideImage
+.indicator1:checked ~ .SlideImageGroup .SlideImage{
+
+}
 .ProductGroup{
   width: 528px;
   height: 634px;
