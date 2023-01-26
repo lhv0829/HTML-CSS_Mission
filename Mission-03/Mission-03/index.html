@@ -63,21 +63,21 @@
           <a href="/" class="hashtag">#뽑아쓰는키친타올</a>
         </div>
       </div>
-      <div class="SlideBanner">
-        <ul class="SlideImageGroup">
-          <li class="SlideImage">
+      <div class="SlideBanner" role="region" aria-roledescription="carousel" aria-label="생활용품 슬라이드 배너">
+        <ul class="SlideImageGroup" id="HouseWareSlideImageList" aria-live="off">
+          <li class="SlideImage" role="region" aria-roledescription="slide" aria-label="2개의 슬라이드 중 첫 번째">
             <img src="./assets/slides/houseware-downy.jpg" alt="">
           </li>
-          <li class="SlideImage">
+          <li class="SlideImage" role="region" aria-roledescription="slide" aria-label="2개의 슬라이드 중 두 번째">
             <img src="./assets/slides/houseware-dandruff.jpg" alt="">
           </li>
         </ul>
-        <div class="SlideBannerText">
+        <div class="SlideBannerText" role="region" aria-label="상품 설명 문구">
           <p>최초의 99.9% 항균<span>세균 냄새 걱정 없이 상쾌하게!</span></p>  
         </div>
         <div class="IndicateGroup">
-          <input type="radio" name="KitchenWareProduct" checked>
-          <input type="radio" name="KitchenWareProduct" class="input2">
+          <input type="radio" name="HouseWareProduct" checked aria-label="2개의 슬라이드 중 첫 번째" aria-controls="HouseWareSlideImageList">
+          <input type="radio" name="HouseWareProduct" class="input2" aria-label="2개의 슬라이드 중 두 번째" aria-controls="HouseWareSlideImageList">
         </div>
       </div>
       <div class="ProductGroup">
@@ -86,7 +86,7 @@
             <img src="./assets/category/houseware/houseware-basket.jpg" alt="칫솔 보관 세트" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">왕타 칫솔 바스켓 앤 커버 10p+걸이 5p+바구니</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 12,900 <span class="won">원</span>
               </div>
@@ -96,7 +96,7 @@
             <img src="./assets/category/houseware/houseware-hairoil.jpg" alt="로레알 헤어오일" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">로레알파리 엑스트라 오디네리 헤어오일 엑스트라 리치</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 10,020 <span class="won">원</span>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">
@@ -131,7 +131,7 @@
             <img src="./assets/category/houseware/houseware-dryingrack.jpg" alt="건조대" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">모던홈 탱크건조대 2단 특개 1개</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 28,550 <span class="won">원</span>
               </div>
@@ -141,7 +141,7 @@
             <img src="./assets/category/houseware/houseware-mask.jpg" alt="방역마스크" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">웰킵스 황사방역마스크 KF94, 초소형 1개입 25개</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 16,900 <span class="won">원</span>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">
@@ -156,7 +156,11 @@
         <h3 class="CategoryTitle">
           주방용품
         </h3>
-        <div class="goLink">바로가기</div>
+        <div class="goLink">
+          <a href="/">
+            바로가기
+          </a>
+        </div>
         <div class="keyword">HOT 키워드</div>
         <div class="HashTagGroup">
           <a href="/" class="hashtag">#니트릴장갑</a>
@@ -167,12 +171,12 @@
           <a href="/" class="hashtag">#수세미</a>
         </div>
       </div>
-      <div class="SlideBanner">
-        <ul class="SlideImageGroup">
-          <li class="SlideImage">
+      <div class="SlideBanner" role="region" aria-roledescription="carousel" aria-label="주방용품 슬라이드 배너">
+        <ul class="SlideImageGroup" id="KitchenWareSlideImageList" aria-live="off">
+          <li class="SlideImage" role="region" aria-roledescription="slide" aria-label="2개의 슬라이드 중 첫 번째">
             <img src="./assets/slides/kitchenware-tumbler.jpg" alt="">
           </li>
-          <li class="SlideImage">
+          <li class="SlideImage" role="region" aria-roledescription="slide" aria-label="2개의 슬라이드 중 두 번째">
             <img src="./assets/slides/kitchenware-lunchbox.jpg" alt="">
           </li>
         </ul>
@@ -180,8 +184,8 @@
           <p>텀블러<span>실용성에 디자인까지, 착한 텀블러</span></p>  
         </div>
         <div class="IndicateGroup">
-          <input type="radio" name="HouseWareProduct" id="HouseWareSlide1" checked>
-          <input type="radio" name="HouseWareProduct" class="input2" id="HouseWareSlide2">
+          <input type="radio" name="KitchenWareProduct" aria-label="2개의 슬라이드 중 첫 번째" aria-controls="HouseWareSlideImageList">
+          <input type="radio" name="KitchenWareProduct" class="input2"  aria-label="2개의 슬라이드 중 두 번째" aria-controls="HouseWareSlideImageList">
         </div>
       </div>
       <div class="ProductGroup">
@@ -201,7 +205,7 @@
             <img src="./assets/category/kitchenware/kitchenware-airfryer.jpg" alt="에어프라이어" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">니코 에어프라이어 오븐겸용 5.2L, DWAF-5.5NK</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 37,800 <span class="won">원</span>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">
@@ -225,7 +229,7 @@
             <img src="./assets/category/kitchenware/kitchenware-zipperbag.jpg" alt="지퍼백" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">기본에 크린지퍼백 소형 100매, 5개</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 5,740 <span class="won">원</span>
                 <img src="assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">
@@ -236,7 +240,7 @@
             <img src="./assets/category/kitchenware/kitchenware-paperspoon.jpg" alt="종이 위생 스푼" class="ProductImage">
             <div class="ProductInfo">
               <p class="ProductName">메이그린 친환경 종이 위생 스푼, 10개입, 10개</p>
-              <div class="priceInfo"></div>
+              <div class="priceInfo" role="contentinfo" aria-label="판매가"></div>
               <div class="price">
                 4,850 <span class="won">원</span>
               </div>
