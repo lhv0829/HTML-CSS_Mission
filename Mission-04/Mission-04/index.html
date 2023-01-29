@@ -42,15 +42,16 @@
         <a href="https://www.coupang.com/" target="_blank" rel="noopener noreferrer"></a>  
         coupang
       </h1>
-      <form action="" class="Search">
-        <select name="" id="" class="Search-select">
+      <form action="/" class="Search">
+        <select name="category" id="search-category" class="Search-select">
+          <option value="all">전체</option>
         </select>
         <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg" class="dropdown">
           <path d="M9 0H0L4.69565 6L9 0Z" fill="#767676"/>
         </svg>                  
         <input type="search" class="Search-Input" placeholder="찾고 싶은 상품을 검색해 보세요!" required>
-        <button class="IconMic"></button>
-        <button class="IconSearch"></button>
+        <button class="IconMic" aria-label="음성 인식 버튼"></button>
+        <button class="IconSearch" aria-label="검색 버튼"></button>
       </form>
       <div class="myCoupang">
         <button>마이쿠팡</button>

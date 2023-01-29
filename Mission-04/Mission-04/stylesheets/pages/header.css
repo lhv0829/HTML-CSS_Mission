@@ -140,6 +140,14 @@ ul{
   appearance: none;
 
   background-color: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+
+  color: var(--color-gray-700);
+
+  padding-left: 12px;
 }
 .dropdown{
   position: absolute;
