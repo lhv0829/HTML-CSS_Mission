@@ -41,20 +41,10 @@ ul{
 }
 .LoginBarList li:nth-of-type(4), .LoginBarList li:nth-of-type(5){
   order: -1;
-  width: 56px;
-  height: 14px;
 }
 .LoginBarList li:nth-of-type(5)
 {
   flex-grow: 1;
-}
-.LoginBarList li:nth-of-type(1){
-  width: 34px;
-  height: 14px;
-}
-.LoginBarList li:nth-of-type(2), .LoginBarList li:nth-of-type(3){
-  width: 45px;
-  height: 14px;
 }
 .headerInner{
   width: 1020px;
