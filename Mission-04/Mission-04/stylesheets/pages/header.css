@@ -324,10 +324,10 @@ ul{
 
   margin-top: 5px;
 }
-.cart .message{
+.cart .TooltipMessage{
   display: none;
 }
-.cart--empty .message{
+.cart--empty .TooltipMessage{
   display: block;
   
   width: 288px;
@@ -346,7 +346,7 @@ ul{
   
   padding: 36px 0 0 47px;
 }
-.cart--empty .message::after {
+.cart--empty .TooltipMessage::after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -358,7 +358,7 @@ ul{
   top: -4.5px; 
   left: calc(95% - 4px/2); 
 }
-.cart--empty .message::before {
+.cart--empty .TooltipMessage::before {
   content: '';
   position: absolute;
   border-style: solid;
