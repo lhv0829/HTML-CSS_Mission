@@ -1,3 +1,9 @@
+ul{
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
 /* ---------------------------------------------- */
 /* 헤더                                            */
 /* ---------------------------------------------- */
@@ -24,17 +30,100 @@ header{
   line-height: 120%;
 
   color: var(--color-white);
-  padding: 0 0 30px 0;
-  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 .button--category svg{
-  margin: 30px 40px 12px 40px;
+  margin-top: 30px;
+}
+.button--category:focus{
+  outline: none;
+  border-radius: 4px;
+  box-shadow: -1px 0 var(--color-red-500), 0px -1px var(--color-red-500), 1px 0 var(--color-red-500), 0px 1px var(--color-red-500);
 }
 
 /* ---------------------------------------------- */
 /* 내비게이션                                        */
 /* ---------------------------------------------- */
+.navigation{
+  width: 1020px;
+  height: 520px;
+  margin: 0 auto;
+  position: relative;
+}
+.navigation__list{
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* display: none; */
+}
+.is--active{
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.navigation ul{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navigation__list li{
+  width: 170px;
+  height: 30px;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-left: 20px;
 
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: initial;
+}
+.navigation__list>li:first-of-type{
+  margin-top: 10px;
+}
+.navigation__list>ul>li:first-of-type{
+  margin-top: 10px;
+}
+.navigation__list>ul>ul>li:first-of-type{
+  margin-top: 10px;
+}
+.navigation__list>ul{
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 180px;
+  top: 0px;
+  
+}
+.navigation__list>ul>ul{
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 180px;
+  top: 0px;
+}
+.navigation__list>li:last-of-type{
+  background-image: url("../../assets/icon/new.svg");
+  background-repeat: no-repeat;
+  background-position: 72px 7px;
+}
+.active:hover, .active:focus{
+  font-weight: 700;
+  color: var(--color-blue-600);
+  background-image: url("../../assets/icon/more-right-active.svg");
+  background-repeat: no-repeat;
+  background-position: 151.5px 8px;
+}
+.navigation__list>ul>ul>li:hover, .navigation__list>ul>ul>li:focus{
+  font-weight: 700;
+  color: var(--color-blue-600);
+}
 
 /* ---------------------------------------------- */
 /* 메인 콘텐츠                                       */
@@ -48,3 +137,168 @@ header{
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
+.footer{
+  width: 1920px;
+  height: 349px;
+  margin: 0 auto;
+  position: relative;
+}
+.CustomerGuide{
+  width: 1920px;
+  height: 40px;
+  background: var(--color-gray-200);
+  margin: 0;
+}
+.CustomerGuideList{
+  width: 1006px;
+  height: 35px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.CustomerGuideItem{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-gray-800);
+}
+.CustomerGuideItem:nth-of-type(5), .CustomerGuideItem:nth-of-type(7){
+  font-weight: 700;
+}
+.divider{
+  display: inline-block;
+  margin-right: 14px;
+  font-weight: 400;
+}
+.CoupangInformationOutside{
+  width: 1920px;
+  height: 207px;
+  background: var(--color-white);
+  margin: 0;
+  position: absolute;
+  top: 40px;
+}
+.CoupangInformationInside{
+  width: 1200px;
+  height: 143px;
+  margin: 32px auto;
+
+  display: flex;
+  flex-direction: row;
+  gap: 62px;
+}
+.logo{
+  width: 176px;
+  height: 40px;
+
+  color: rgba(0, 0, 0, 0);
+
+  background-image: url("../../assets/logo/logo-mono.svg");
+  margin: 0;
+}
+.CoupangInformationList{
+  width: 260px;
+  height: 143px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-gray-800);
+}
+.CustomerCenter{
+  width: 293px;
+  height: 143px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-gray-800);
+}
+.CustomerCenter li .center-365{
+  font-weight: 700;
+}
+.CustomerCenter li .divider{
+  width: 1px;
+  height: 12px;
+  margin: 0 13px 0 14px;
+
+  border-left: 1px solid var(--color-gray-800);
+}
+.CustomerCenter li .tel{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 4px;
+}
+.PaymentGuarantee{
+  width: 282px;
+  height: 84px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-gray-800);
+}
+.PaymentGuarantee .topic{
+  font-weight: 700;
+}
+.CopyrightSNS{
+  width: 1920px;
+  height: 102px;
+  background: var(--color-gray-900);
+
+  position: absolute;
+  top: 247px;
+}
+.CopyrightSNSGroup{
+  width: 1024px;
+  height: 70px;
+
+  margin: 16px auto;
+
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.Copyright{
+  width: 852px;
+  height: 70px;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  color: var(--color-gray-200);
+}
+.SNS{
+  width: 122px;
+  height: 34px;
+  margin-top: 36px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.SNS a{
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+.instagram{
+  border-radius: 50%;
+  background: linear-gradient(174.12deg, #285AEB 5.61%, #BC1888 22.32%, #CC2366 36.16%, #DC2743 51.91%, #E6683C 73.38%, #F09433 91.99%);
+}
