@@ -87,13 +87,13 @@ header{
 .navigation__list>li:first-of-type{
   margin-top: 10px;
 }
-.navigation__list>ul>li:first-of-type{
+.navigation__list>li>ul>li:first-of-type{
   margin-top: 10px;
 }
-.navigation__list>ul>ul>li:first-of-type{
+.navigation__list>li>ul>li>ul>li:first-of-type{
   margin-top: 10px;
 }
-.navigation__list>ul{
+.navigation__list>li>ul{
   width: 180px;
   height: 500px;
   position: absolute;
@@ -101,7 +101,7 @@ header{
   top: 0px;
   
 }
-.navigation__list>ul>ul{
+.navigation__list>li>ul>li>ul{
   width: 180px;
   height: 500px;
   position: absolute;
@@ -120,7 +120,7 @@ header{
   background-repeat: no-repeat;
   background-position: 151.5px 8px;
 }
-.navigation__list>ul>ul>li:hover, .navigation__list>ul>ul>li:focus{
+.navigation__list>li>ul>li>ul>li:hover, .navigation__list>li>ul>li>ul>li:focus{
   font-weight: 700;
   color: var(--color-blue-600);
 }
