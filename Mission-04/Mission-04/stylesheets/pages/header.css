@@ -139,9 +139,13 @@ ul{
   -moz-appearance: none;
   appearance: none;
 
-  background-image: url("../../assets/icon/dropdown.svg");
-  background-repeat: no-repeat;
-  background-position: right 16px top 50%;
+  background-color: transparent;
+}
+.dropdown{
+  position: absolute;
+  left: 109px;
+  top: 17px;
+  z-index: -1;
 }
 .Search-Input{
   width: 300px;
