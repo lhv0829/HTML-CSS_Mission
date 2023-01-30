@@ -60,14 +60,10 @@ header{
   position: absolute;
   left: 0px;
   top: 0px;
-  /* display: none; */
+  display: none;
 }
-.is--active{
-  width: 180px;
-  height: 500px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+.is--active .navigation__list{
+  display: initial;
 }
 .navigation ul{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -99,7 +95,11 @@ header{
   position: absolute;
   left: 180px;
   top: 0px;
-  
+
+  display: none;
+}
+.is--active .navigation__list>li:hover>ul, .is--active .navigation__list>li>a:focus+ul{
+  display: initial;
 }
 .navigation__list>li>ul>li>ul{
   width: 180px;
@@ -107,20 +107,46 @@ header{
   position: absolute;
   left: 180px;
   top: 0px;
+  
+  display: none;
+}
+.is--active .navigation__list>li>ul>li:hover>ul, .is--active .navigation__list>li>ul>li>a:focus+ul{
+  display: initial;
 }
 .navigation__list>li:last-of-type{
   background-image: url("../../assets/icon/new.svg");
   background-repeat: no-repeat;
   background-position: 72px 7px;
 }
-.active:hover, .active:focus{
+.active:hover{
   font-weight: 700;
   color: var(--color-blue-600);
   background-image: url("../../assets/icon/more-right-active.svg");
   background-repeat: no-repeat;
   background-position: 151.5px 8px;
 }
-.navigation__list>li>ul>li>ul>li:hover, .navigation__list>li>ul>li>ul>li:focus{
+.active>a:focus{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  color: var(--color-blue-600);
+  background-image: url("../../assets/icon/more-right-active.svg");
+  background-repeat: no-repeat;
+  background-position: 131.5px 3px;
+}
+/* .is--active>a:focus{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  color: var(--color-blue-600);
+  background-image: url("../../assets/icon/more-right-active.svg");
+  background-repeat: no-repeat;
+  background-position: 131.5px 3px;
+} */
+
+.navigation__list>li>ul>li>ul>li:hover, .navigation__list>li>ul>li>ul>li>a:focus{
   font-weight: 700;
   color: var(--color-blue-600);
 }

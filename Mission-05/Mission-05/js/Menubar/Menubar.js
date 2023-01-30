@@ -25,6 +25,7 @@ export class Menubar {
 
     while (e) {
       let menubarItem = e.firstElementChild;
+      
       if (e && menubarItem && menubarItem.tagName !== 'A') {
         throw new Error(msgPrefix + '의 자식 요소가 A 요소가 아닙니다.');
       }
