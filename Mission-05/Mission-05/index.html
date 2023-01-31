@@ -40,25 +40,21 @@
 
       <div class="navigation__inner">
         <!-- 카테고리별 내비게이션(메뉴) 영역 -->
-        <ul class="navigation__list">
-          <li class="active">
-            <a href="" role="button">
-              <span class="ic-clothes"></span> 패션의류/잡화
-              <ul>
-                <li class="active">
-                  <a href="" role="button" tabindex="1">
-                    여성패션
-                    <ul>
-                      <li><a href="/">의류</a></li>
-                      <li><a href="/">속옷/잠옷</a></li>
-                      <li><a href="/">신발</a></li>
-                    </ul>
-                  </a>
-                </li>
-                <li><a href="">남성패션</a></li>
-                <li><a href="">유아동패션</a></li>
-              </ul>
-            </a>
+        <ul class="navigation__list depth-1">
+          <li>
+            <a href="" role="button"><span class="ic-clothes"></span> 패션의류/잡화</a>
+            <ul class="depth-2">
+              <li>
+                <a href="" role="button">여성패션</a>
+                <ul class="depth-3">
+                  <li><a href="/">의류</a></li>
+                  <li><a href="/">속옷/잠옷</a></li>
+                  <li><a href="/">신발</a></li>
+                </ul>
+              </li>
+              <li><a href="">남성패션</a></li>
+              <li><a href="">유아동패션</a></li>
+            </ul>
           </li>
           <li><a href=""><span class="ic-beauty"></span> 뷰티</a></li>
           <li><a href=""><span class="ic-baby"></span> 출산유아동</a></li>
