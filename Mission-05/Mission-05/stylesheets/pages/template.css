@@ -83,43 +83,6 @@ header{
 .depth-1>li:first-of-type, .depth-2>li:first-of-type, .depth-3>li:first-of-type{
   margin-top: 10px;
 }
-.depth-2{
-  display: none;
-}
-.navigation__list>li>.is--active+.depth-2{
-  width: 180px;
-  height: 500px;
-  position: absolute;
-  left: 180px;
-  top: 0px;
-
-  display: initial;
-}
-.depth-2::before{
-  content: "";
-  width: 1px;
-  height: 500px;
-  background: var(--color-gray-400);
-  position: absolute;
-}
-.depth-3{
-  display: none;
-}
-.is--active+.depth-3{
-  width: 180px;
-  height: 500px;
-  position: absolute;
-  left: 180px;
-  top: 0px;
-  display: initial;
-}
-.depth-3::before{
-  content: "";
-  width: 1px;
-  height: 500px;
-  background: var(--color-gray-400);
-  position: absolute;
-}
 .depth-1>li:last-of-type>a{
   display: block;
   width: 100%;
@@ -128,7 +91,42 @@ header{
   background-repeat: no-repeat;
   background-position: 52px 2px;
 }
-.is--active .navigation__list>li>a:focus, .is--active .navigation__list>li>.is--active>li>a:focus{
+.depth-2{
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 180px;
+  top: 0px;
+
+  display: none;
+}
+.depth-3{
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  left: 180px;
+  top: 0px;
+
+  display: none;
+}
+.is--active+.is--active{
+  display: initial;
+}
+.depth-2::before, .depth-3::before{
+  content: "";
+  width: 1px;
+  height: 500px;
+  background: var(--color-gray-400);
+  position: absolute;
+}
+/* .depth-3::before{
+  content: "";
+  width: 1px;
+  height: 500px;
+  background: var(--color-gray-400);
+  position: absolute;
+} */
+a[class="is--active"]{
   display: block;
   width: 100%;
   height: 100%;
@@ -138,7 +136,7 @@ header{
   background-repeat: no-repeat;
   background-position: 131.5px 3px;
 }
-a[class="is--active"]{
+.is--active .navigation__list>li>a:focus, .is--active .navigation__list>li>.is--active>li>a:focus{
   display: block;
   width: 100%;
   height: 100%;
